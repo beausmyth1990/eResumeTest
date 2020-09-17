@@ -1,0 +1,33 @@
+﻿/* Start Img.LazyLoad */
+.lazy-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.lazy-img.in-view {
+    opacity: 1;
+    transition: opacity ease-in 1s;
+}
+/* End Img.LazyLoad */
+
+/* Start Container.LazyLoad */
+.lazy-container {
+    opacity: 0;
+    display: block;
+    padding: 1em;
+    margin: auto;
+    margin-left: -100px;
+    width: 100%;
+    height: auto;
+}
+
+.lazy-container.in-view {
+    opacity: 1;
+    margin-left: unset;
+    transition: margin-left ease-in 1s, opacity ease-in 1s;
+}
+/* End Container.LazyLoad */
+
+
